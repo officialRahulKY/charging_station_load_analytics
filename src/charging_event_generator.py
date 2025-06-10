@@ -5,7 +5,7 @@ import time
 from datetime import datetime, timedelta
 
 # Configuration
-output_dir = "stream_data"
+output_dir = "input"
 os.makedirs(output_dir, exist_ok=True)
 
 stations_capacity = {

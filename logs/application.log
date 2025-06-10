@@ -1,0 +1,261 @@
+INFO:__main__:job has started. Please see the logs at /home/rahul/repos/charging_station_load_analytics/logs
+INFO:py4j.java_gateway:Callback Server Starting
+INFO:py4j.java_gateway:Socket listening on ('127.0.0.1', 38409)
+INFO:py4j.clientserver:Python Server ready to receive messages
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:py4j.clientserver:Error while receiving.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+INFO:py4j.clientserver:Closing down clientserver connection
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 566, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+INFO:py4j.clientserver:Error while receiving.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/core/context.py", line 389, in signal_handler
+    self.cancelAllJobs()
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/core/context.py", line 2487, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 282, in deco
+    return f(*a, **kw)
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/protocol.py", line 335, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o14.sc
+INFO:py4j.clientserver:Closing down clientserver connection
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/core/context.py", line 389, in signal_handler
+    self.cancelAllJobs()
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/core/context.py", line 2487, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 282, in deco
+    return f(*a, **kw)
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/protocol.py", line 335, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o14.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 566, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+INFO:py4j.clientserver:Closing down clientserver connection
+INFO:py4j.clientserver:Closing down clientserver connection
+INFO:__main__:job has started. Please see the logs at /home/rahul/repos/charging_station_load_analytics/logs
+INFO:py4j.java_gateway:Callback Server Starting
+INFO:py4j.java_gateway:Socket listening on ('127.0.0.1', 39013)
+INFO:py4j.clientserver:Python Server ready to receive messages
+INFO:py4j.clientserver:Received command c on object id p0
+ERROR:py4j.clientserver:There was an exception while executing the Python Proxy on the Python Side.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 644, in _call_proxy
+    return_value = getattr(self.pool[obj_id], method)(*params)
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/sql/utils.py", line 165, in call
+    raise e
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/sql/utils.py", line 162, in call
+    self.func(DataFrame(jdf, wrapped_session_jdf), batch_id)
+  File "/home/rahul/repos/charging_station_load_analytics/top_3_busiest_charging_stations.py", line 26, in dump_to_folder
+    logger.INFO(f"batch with batch id : {batch_id} has been saved to {output_path}")
+AttributeError: 'Logger' object has no attribute 'INFO'
+INFO:py4j.clientserver:Closing down clientserver connection
+INFO:__main__:job has started. Please see the logs at /home/rahul/repos/charging_station_load_analytics/logs
+INFO:py4j.java_gateway:Callback Server Starting
+INFO:py4j.java_gateway:Socket listening on ('127.0.0.1', 46223)
+INFO:py4j.clientserver:Error while receiving.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+INFO:py4j.clientserver:Closing down clientserver connection
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 566, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+INFO:py4j.clientserver:Error while receiving.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/core/context.py", line 389, in signal_handler
+    self.cancelAllJobs()
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/core/context.py", line 2487, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 282, in deco
+    return f(*a, **kw)
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/protocol.py", line 335, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o14.sc
+INFO:py4j.clientserver:Closing down clientserver connection
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/core/context.py", line 389, in signal_handler
+    self.cancelAllJobs()
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/core/context.py", line 2487, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 282, in deco
+    return f(*a, **kw)
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/protocol.py", line 335, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o14.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 566, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+INFO:py4j.clientserver:Closing down clientserver connection
+INFO:py4j.clientserver:Closing down clientserver connection
+INFO:charging_analytics:job has started. Please see the logs at /home/rahul/repos/charging_station_load_analytics/logs
+INFO:py4j.java_gateway:Callback Server Starting
+INFO:py4j.java_gateway:Socket listening on ('127.0.0.1', 36759)
+INFO:py4j.clientserver:Python Server ready to receive messages
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:charging_analytics:batch with batch id : 0 has been saved to /home/rahul/repos/charging_station_load_analytics/output
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:charging_analytics:batch with batch id : 1 has been saved to /home/rahul/repos/charging_station_load_analytics/output
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:charging_analytics:batch with batch id : 2 has been saved to /home/rahul/repos/charging_station_load_analytics/output
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:charging_analytics:batch with batch id : 3 has been saved to /home/rahul/repos/charging_station_load_analytics/output
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:charging_analytics:batch with batch id : 4 has been saved to /home/rahul/repos/charging_station_load_analytics/output
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:charging_analytics:batch with batch id : 5 has been saved to /home/rahul/repos/charging_station_load_analytics/output
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:charging_analytics:batch with batch id : 6 has been saved to /home/rahul/repos/charging_station_load_analytics/output
+INFO:charging_analytics:/home/rahul/repos/charging_station_load_analytics/output/.part-00000-99aa8589-20cf-49c9-9eeb-eefcd73c2c44-c000.json.crc has been deleted.
+INFO:charging_analytics:/home/rahul/repos/charging_station_load_analytics/output/part-00000-99aa8589-20cf-49c9-9eeb-eefcd73c2c44-c000.json has been deleted.
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:charging_analytics:batch with batch id : 7 has been saved to /home/rahul/repos/charging_station_load_analytics/output
+INFO:py4j.clientserver:Received command c on object id p0
+INFO:charging_analytics:batch with batch id : 8 has been saved to /home/rahul/repos/charging_station_load_analytics/output
+INFO:py4j.clientserver:Error while receiving.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+INFO:py4j.clientserver:Closing down clientserver connection
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 566, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+INFO:py4j.clientserver:Error while receiving.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/core/context.py", line 389, in signal_handler
+    self.cancelAllJobs()
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/core/context.py", line 2487, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 282, in deco
+    return f(*a, **kw)
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/protocol.py", line 335, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o14.sc
+INFO:py4j.clientserver:Closing down clientserver connection
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 535, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/core/context.py", line 389, in signal_handler
+    self.cancelAllJobs()
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/core/context.py", line 2487, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+  File "/home/rahul/.local/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 282, in deco
+    return f(*a, **kw)
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/protocol.py", line 335, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o14.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/rahul/.local/lib/python3.10/site-packages/py4j/clientserver.py", line 566, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+INFO:py4j.clientserver:Closing down clientserver connection
+INFO:py4j.clientserver:Closing down clientserver connection
